@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="fittrack">FitTrack</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="view_history">View History</string>
+    <string name="app_name" />
+</resources>

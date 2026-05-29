@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fit_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detailsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/fit_green"
+            android:title="Workout Details"
+            android:titleTextColor="@color/fit_white"
+            app:titleCentered="true" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/fit_white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"
+                    android:background="@color/fit_light_green" />
+
+                <TextView
+                    android:id="@+id/textExerciseDetails"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/fit_text"
+                    android:fontFamily="@font/coolvetica_rg"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textSetsRepsDetails"
+                    android:textSize="17sp"
+                    android:textColor="@color/fit_grey"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textDateDetails"
+                    android:textSize="15sp"
+                    android:textColor="@color/fit_grey"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            android:text="Edit Workout"
+            android:textAllCaps="false"
+            android:textColor="@color/fit_white"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/fit_green" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            android:text="Delete Workout"
+            android:textAllCaps="false"
+            android:textColor="@color/fit_white"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/fit_red" />
+
+    </LinearLayout>
+
+</ScrollView>

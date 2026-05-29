@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/fit_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/historyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/fit_green"
+        android:title="Workout History"
+        android:titleTextColor="@color/fit_white"
+        app:titleCentered="true" />
+
+    <TextView
+        android:id="@+id/textEmpty"
+        android:text="No workouts yet.\nStart by adding one 💪"
+        android:textSize="18sp"
+        android:textColor="@color/fit_grey"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerWorkouts"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

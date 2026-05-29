@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/fit_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="🏋️"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Track your workouts easily"
+        android:textSize="24sp"
+        android:fontFamily="@font/coolvetica_rg"
+        android:textColor="@color/fit_text"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Save workouts, upload progress images, and view your fitness history."
+        android:textSize="16sp"
+        android:textColor="@color/fit_grey"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/fit_white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Fitness Tip"
+                android:textSize="18sp"
+                android:fontFamily="@font/coolvetica_rg"
+                android:textColor="@color/fit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textFitnessTip"
+                android:text="Loading tip 💡"
+                android:textSize="14sp"
+                android:textColor="@color/fit_grey"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddWorkout"
+        android:text="Add Workout"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/fit_white"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="18dp"
+        app:backgroundTint="@color/fit_green" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewHistory"
+        android:text="View History"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/fit_green"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="18dp"
+        app:strokeColor="@color/fit_green"
+        app:strokeWidth="2dp"
+        app:backgroundTint="@color/fit_white" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FitTrack" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fit_green</item>
+        <item name="colorPrimaryVariant">@color/fit_dark_green</item>
+        <item name="colorOnPrimary">@color/fit_white</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/fit_dark_green</item>
+    </style>
+
+    <style name="Theme.FitTrack" parent="Base.Theme.FitTrack" />
+</resources>
